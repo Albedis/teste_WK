@@ -200,7 +200,7 @@ begin
         LQuery.ParamByName('id_produto').AsInteger := LItem.Produto.id_produto;
         LQuery.ParamByName('quantidade').AsFloat := LItem.Quantidade;
         LQuery.ParamByName('valor_unitario').AsCurrency := LItem.ValorUnitario;
-        LQuery.Open;
+        LQuery.ExecSQL;
         LItem.Id := LQuery.FieldByName('id_pedido_item').AsInteger;
       end;
 
