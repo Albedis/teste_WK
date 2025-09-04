@@ -2,6 +2,7 @@ program CadastroPedido;
 
 uses
   Vcl.Forms,
+  FireDAC.DApt,
   wk.model.cliente in '..\model\wk.model.cliente.pas',
   wk.model.produto in '..\model\wk.model.produto.pas',
   wk.model.pedido in '..\model\wk.model.pedido.pas',
